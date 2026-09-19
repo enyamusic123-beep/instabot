@@ -1,0 +1,14 @@
+{
+  "name": "get-more-streams-on-spotify",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Signal backend for compliant Instagram publishing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check config.js && node --check queue-store.js && node --check providers/openai-image.js && node --check instagram.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

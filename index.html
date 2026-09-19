@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101010" />
+    <meta
+      name="description"
+      content="A practical command center for building legitimate Spotify discovery."
+    />
+    <title>Signal — Spotify growth command center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .instagram-notice{display:flex;gap:12px;align-items:flex-start;background:#f1f7df;border:1px solid #d9e8ad;border-radius:7px;padding:16px 18px;margin:30px 0 14px}.notice-icon{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#d8f56d;color:#354019;font-weight:700}.instagram-notice strong{font-size:12px}.instagram-notice p{margin:4px 0 0;color:#69705a;font-size:12px}.instagram-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.9fr);gap:14px}.generator-panel,.queue-panel{padding:24px}.generator-panel label{display:flex;flex-direction:column;gap:8px;margin-top:18px;color:#69665e;font-size:12px}.generator-panel textarea{resize:vertical;border:1px solid var(--line);border-radius:5px;padding:11px 12px;color:var(--ink);background:#fcfcfa}.generator-panel textarea:focus,.generator-panel input:focus{outline:2px solid #d8f56d;outline-offset:1px}.instagram-queue{display:flex;flex-direction:column;gap:9px}.instagram-queue-item{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.instagram-queue-item:last-child{border-bottom:0}.instagram-thumb{width:44px;height:44px;border-radius:4px;object-fit:cover;background:linear-gradient(135deg,#333,#a8c76b)}.instagram-queue-item div{min-width:0;flex:1}.instagram-queue-item strong,.instagram-queue-item span{display:block}.instagram-queue-item strong{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.instagram-queue-item span{color:#8b887f;font:10px "DM Mono",monospace;margin-top:4px}.queue-status{color:#628d6d!important}.empty-state{color:#89867e;font-size:12px;padding:18px 0}@media (max-width:800px){.instagram-layout{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#overview" aria-label="Signal home">
+          <span class="brand-mark">↗</span>
+          <span>signal<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="workspace-switcher">
+          <span class="eyebrow">WORKSPACE</span>
+          <button class="workspace-button" type="button">
+            <span class="avatar">NV</span>
+            <span class="workspace-name">Nova Vale</span>
+            <span class="chevron">⌄</span>
+          </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <span class="nav-label">COMMAND CENTER</span>
+          <a class="nav-item active" href="#overview" data-view="overview"><span class="nav-icon">◈</span> Overview</a>
+          <a class="nav-item" href="#campaign" data-view="campaign"><span class="nav-icon">◎</span> Campaign</a>
+          <a class="nav-item" href="#content" data-view="content"><span class="nav-icon">✦</span> Content studio</a>
+          <a class="nav-item" href="#instagram" data-view="instagram"><span class="nav-icon">◎</span> Instagram studio</a>
+          <a class="nav-item" href="#links" data-view="links"><span class="nav-icon">↗</span> Links &amp; CTAs</a>
+          <a class="nav-item" href="#analytics" data-view="analytics"><span class="nav-icon">▥</span> Analytics</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="pro-tip">
+            <span class="tip-icon">✦</span>
+            <div>
+              <strong>Build a signal</strong>
+              <p>Real fans, repeat listens.</p>
+            </div>
+          </div>
+          <a class="nav-item muted" href="#settings"><span class="nav-icon">⚙</span> Settings</a>
+          <div class="user-row">
+            <span class="avatar avatar-small">NV</span>
+            <div><strong>Nova Vale</strong><span>Artist workspace</span></div>
+            <span class="more">•••</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="mobile-menu" type="button" aria-label="Open menu">☰</button>
+          <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="page-breadcrumb">Overview</strong></div>
+          <div class="topbar-actions">
+            <span class="sync-status"><span class="status-dot"></span> Saved locally</span>
+            <button class="icon-button" type="button" aria-label="Notifications">♢<span class="notification-dot"></span></button>
+            <button class="top-avatar" type="button">NV</button>
+          </div>
+        </header>
+
+        <div class="page-wrap">
+          <section class="view active" data-view-panel="overview">
+            <div class="hero">
+              <div>
+                <p class="eyebrow accent">MONDAY, 19 SEPTEMBER 2026</p>
+                <h1>Good morning, Nova<span class="accent">.</span></h1>
+                <p class="hero-subtitle">Your next wave is already in motion.</p>
+              </div>
+              <button class="primary-button" type="button" data-navigate="campaign"><span>＋</span> Plan a campaign</button>
+            </div>
+
+            <div class="release-banner">
+              <div class="release-art"><span>NV</span></div>
+              <div class="release-copy">
+                <span class="eyebrow">NEXT RELEASE · IN 12 DAYS</span>
+                <h2>Afterglow <span>— single</span></h2>
+                <div class="release-meta"><span class="mini-dot"></span> 01 OCT 2026 <span class="divider"></span> <span>Electronic / Alt-pop</span></div>
+              </div>
+              <div class="release-progress">
+                <div class="progress-label"><span>Campaign readiness</span><strong>68%</strong></div>
+                <div class="progress-track"><span style="width: 68%"></span></div>
+                <button class="text-button" type="button" data-navigate="campaign">View campaign <span>→</span></button>
+              </div>
+            </div>
+
+            <div class="section-heading">
+              <div><p class="eyebrow">THE BIG PICTURE</p><h2>Momentum at a glance</h2></div>
+              <span class="date-range">Last 28 days <span>⌄</span></span>
+            </div>
+            <div class="metric-grid">
+              <article class="metric-card">
+                <div class="metric-top"><span class="metric-label">Streams</span><span class="metric-icon green">↗</span></div>
+                <strong class="metric-value">24,680</strong>
+                <div class="metric-trend up"><span>↑ 18.4%</span><small>vs previous period</small></div>
+                <div class="sparkline green-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card">
+                <div class="metric-top"><span class="metric-label">Saves</span><span class="metric-icon purple">♡</span></div>
+                <strong class="metric-value">1,842</strong>
+                <div class="metric-trend up"><span>↑ 12.7%</span><small>vs previous period</small></div>
+                <div class="sparkline purple-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card">
+                <div class="metric-top"><span class="metric-label">Listeners</span><span class="metric-icon orange">◉</span></div>
+                <strong class="metric-value">12,304</strong>
+                <div class="metric-trend up"><span>↑ 9.2%</span><small>vs previous period</small></div>
+                <div class="sparkline orange-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card">
+                <div class="metric-top"><span class="metric-label">Followers</span><span class="metric-icon blue">♧</span></div>
+                <strong class="metric-value">3,091</strong>
+                <div class="metric-trend up"><span>↑ 6.8%</span><small>vs previous period</small></div>
+                <div class="sparkline blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="panel momentum-panel">
+                <div class="panel-heading"><div><p class="eyebrow">LISTENING ACTIVITY</p><h2>Momentum</h2></div><button class="more-button" type="button">•••</button></div>
+                <div class="chart-legend"><span><i class="legend-swatch current"></i> This period</span><span><i class="legend-swatch previous"></i> Previous period</span></div>
+                <div class="chart"><div class="chart-y"><span>3k</span><span>2k</span><span>1k</span><span>0</span></div><div class="chart-area"><div class="grid-line one"></div><div class="grid-line two"></div><div class="grid-line three"></div><div class="grid-line four"></div><svg viewBox="0 0 640 190" preserveAspectRatio="none" aria-label="Streams trending upward"><path class="chart-fill" d="M0,145 C44,150 55,130 83,134 S128,118 150,127 S194,111 220,119 S258,91 283,104 S330,81 355,91 S394,58 425,71 S458,56 480,62 S520,35 548,48 S602,15 640,22 L640,190 L0,190 Z"></path><path class="chart-line" d="M0,145 C44,150 55,130 83,134 S128,118 150,127 S194,111 220,119 S258,91 283,104 S330,81 355,91 S394,58 425,71 S458,56 480,62 S520,35 548,48 S602,15 640,22"></path><path class="chart-previous" d="M0,158 C50,142 70,159 102,145 S155,138 182,147 S230,120 258,132 S315,111 343,125 S385,106 415,112 S467,89 500,103 S554,84 580,91 S620,75 640,79"></path></svg><div class="chart-x"><span>Aug 24</span><span>Aug 31</span><span>Sep 7</span><span>Sep 14</span><span>Today</span></div></div></div>
+              </article>
+              <article class="panel tasks-panel">
+                <div class="panel-heading"><div><p class="eyebrow">UP NEXT</p><h2>Today's focus</h2></div><span class="task-count">3 / 7</span></div>
+                <div class="task-list">
+                  <label class="task-item"><input type="checkbox" checked /><span class="checkmark"></span><span class="task-text done">Send pre-save link to email list</span><span class="task-date">Today</span></label>
+                  <label class="task-item"><input type="checkbox" /><span class="checkmark"></span><span class="task-text">Film 15-sec “Afterglow” hook</span><span class="task-date">Today</span></label>
+                  <label class="task-item"><input type="checkbox" /><span class="checkmark"></span><span class="task-text">Pitch to 3 independent curators</span><span class="task-date">Today</span></label>
+                  <label class="task-item"><input type="checkbox" /><span class="checkmark"></span><span class="task-text">Review week-one listener sources</span><span class="task-date">Tomorrow</span></label>
+                </div>
+                <button class="outline-button full-width" type="button" data-navigate="campaign">Open campaign plan <span>→</span></button>
+              </article>
+            </div>
+
+            <div class="lower-grid">
+              <article class="panel source-panel">
+                <div class="panel-heading"><div><p class="eyebrow">DISCOVERY</p><h2>Where listeners find you</h2></div><button class="more-button" type="button">•••</button></div>
+                <div class="source-list">
+                  <div class="source-row"><span class="source-name"><i class="source-dot editorial"></i>Editorial playlists</span><strong>42%</strong><div class="source-bar"><span style="width:42%;background:#d3f56a"></span></div></div>
+                  <div class="source-row"><span class="source-name"><i class="source-dot algorithmic"></i>Algorithmic playlists</span><strong>27%</strong><div class="source-bar"><span style="width:27%;background:#a38bff"></span></div></div>
+                  <div class="source-row"><span class="source-name"><i class="source-dot profile"></i>Artist profile</span><strong>18%</strong><div class="source-bar"><span style="width:18%;background:#f6a56d"></span></div></div>
+                  <div class="source-row"><span class="source-name"><i class="source-dot social"></i>Social &amp; direct</span><strong>13%</strong><div class="source-bar"><span style="width:13%;background:#78b7ff"></span></div></div>
+                </div>
+              </article>
+              <article class="panel insight-panel">
+                <div class="insight-orb">✦</div>
+                <p class="eyebrow accent">A SMALL SIGNAL</p>
+                <h2>Your saves are outpacing streams.</h2>
+                <p>That’s a strong indicator of resonance. Double down on the “Afterglow” behind-the-scenes story this week.</p>
+                <button class="text-button" type="button" data-navigate="content">Make content from this <span>→</span></button>
+              </article>
+            </div>
+          </section>
+
+          <section class="view" data-view-panel="campaign">
+            <div class="page-header"><div><p class="eyebrow accent">CAMPAIGN BUILDER</p><h1>Make the next wave count<span class="accent">.</span></h1><p>Turn one release into a focused, repeatable discovery loop.</p></div><span class="save-note">Changes save automatically</span></div>
+            <div class="campaign-layout">
+              <div class="panel setup-panel">
+                <div class="panel-heading"><div><p class="eyebrow">01 · FOUNDATION</p><h2>Release details</h2></div><span class="step-pill">In progress</span></div>
+                <form id="campaign-form" class="campaign-form">
+                  <label>Artist / project name<input id="artist-name" type="text" value="Nova Vale" /></label>
+                  <label>Release title<input id="release-title" type="text" value="Afterglow" /></label>
+                  <div class="form-row"><label>Release date<input id="release-date" type="date" value="2026-10-01" /></label><label>Primary goal<select id="campaign-goal"><option>Grow repeat listeners</option><option>Increase saves</option><option>Reach new listeners</option><option>Grow followers</option></select></label></div>
+                  <label>Spotify release URL<input id="spotify-url" type="url" value="https://open.spotify.com/track/afterglow-nova-vale" /></label>
+                  <div class="form-actions"><button class="primary-button" type="submit">Save release details <span>→</span></button><span class="form-feedback" id="form-feedback"></span></div>
+                </form>
+              </div>
+              <div class="panel goal-panel"><p class="eyebrow">YOUR NORTH STAR</p><h2>Grow repeat listeners</h2><p>People who come back are your real growth engine. Build moments worth returning to.</p><div class="goal-ring"><span>72<small>%</small></span></div><span class="goal-caption">Goal clarity</span></div>
+            </div>
+            <div class="section-heading campaign-section-heading"><div><p class="eyebrow">02 · ACTIVATION PLAN</p><h2>A simple rhythm for release day</h2></div><span class="date-range">7 actions remaining</span></div>
+            <div class="phase-grid">
+              <article class="phase-card"><div class="phase-top"><span class="phase-number">01</span><span class="phase-status ready">Now</span></div><h3>Warm the room</h3><p>Give people a reason to care before asking for a click.</p><ul><li><input type="checkbox" checked /> Share the story behind the song</li><li><input type="checkbox" /> Tease the strongest 15 seconds</li><li><input type="checkbox" /> Invite 5 genuine fan replies</li></ul></article>
+              <article class="phase-card highlighted"><div class="phase-top"><span class="phase-number">02</span><span class="phase-status">Release day</span></div><h3>Make the moment</h3><p>One clear ask, repeated with personality across your best channel.</p><ul><li><input type="checkbox" /> Publish the hero video</li><li><input type="checkbox" /> Send your personal release note</li><li><input type="checkbox" /> Reply to every early listener</li></ul></article>
+              <article class="phase-card"><div class="phase-top"><span class="phase-number">03</span><span class="phase-status">After</span></div><h3>Keep the loop alive</h3><p>Turn early signals into new stories instead of going quiet.</p><ul><li><input type="checkbox" /> Share a listener reaction</li><li><input type="checkbox" /> Follow up with best-performing hook</li><li><input type="checkbox" /> Review source data on day 7</li></ul></article>
+            </div>
+          </section>
+
+          <section class="view" data-view-panel="content">
+            <div class="page-header"><div><p class="eyebrow accent">CONTENT STUDIO</p><h1>Give the song more surfaces<span class="accent">.</span></h1><p>Prompts built for context, not empty promotion.</p></div><button class="primary-button" type="button" id="refresh-prompt">✦ New prompt</button></div>
+            <div class="content-layout"><div class="panel prompt-panel"><div class="prompt-type"><span class="prompt-icon">◌</span><div><p class="eyebrow">SHORT-FORM VIDEO</p><h2 id="prompt-title">The “I almost deleted this” story</h2></div><span class="prompt-tag">High save potential</span></div><div class="prompt-body"><p id="prompt-copy">Open with: “I nearly deleted the song that taught me how to be patient.” Cut between a raw voice note, the first demo, and the finished chorus. End with one line about what changed.</p><div class="prompt-script"><span class="eyebrow">HOOK OPTIONS</span><ol id="hook-list"><li>“This song took three years to sound like 3 minutes.”</li><li>“The version I almost deleted is the reason this exists.”</li><li>“I wrote this for the version of me who needed a sign.”</li></ol></div><button class="outline-button" type="button" id="copy-prompt">Copy prompt <span>⌘ C</span></button><span class="copy-feedback" id="copy-feedback"></span></div></div><div class="panel content-queue"><div class="panel-heading"><div><p class="eyebrow">YOUR QUEUE</p><h2>Ready to make</h2></div><span class="task-count">04</span></div><div class="queue-list"><div class="queue-item"><span class="queue-number">01</span><div><strong>Release story</strong><span>Short-form video · 15 sec</span></div><span class="queue-arrow">→</span></div><div class="queue-item"><span class="queue-number">02</span><div><strong>Listener reaction</strong><span>Story post · 3 frames</span></div><span class="queue-arrow">→</span></div><div class="queue-item"><span class="queue-number">03</span><div><strong>Lyric detail</strong><span>Carousel · 5 slides</span></div><span class="queue-arrow">→</span></div><div class="queue-item"><span class="queue-number">04</span><div><strong>Live room version</strong><span>Short-form video · 30 sec</span></div><span class="queue-arrow">→</span></div></div></div></div>
+            <div class="idea-strip"><span class="idea-spark">✦</span><div><strong>Signal over noise</strong><p>The most effective content usually answers one question: why should someone send this to a friend?</p></div><span class="idea-arrow">→</span></div>
+          </section>
+
+          <section class="view" data-view-panel="instagram">
+            <div class="page-header">
+              <div>
+                <p class="eyebrow accent">INSTAGRAM STUDIO</p>
+                <h1>Publish with a rhythm<span class="accent">.</span></h1>
+                <p>Generate original artwork and queue it through the official Instagram API.</p>
+              </div>
+              <span class="save-note" id="instagram-status">Checking account…</span>
+            </div>
+            <div class="instagram-notice">
+              <span class="notice-icon">✓</span>
+              <div><strong>Compliant publishing only</strong><p>Signal uses Instagram’s Graph API for connected Professional accounts. One post per hour is scheduled during your waking hours.</p></div>
+            </div>
+            <div class="instagram-layout">
+              <form class="panel generator-panel" id="instagram-generator-form">
+                <div class="panel-heading"><div><p class="eyebrow">01 · GENERATE</p><h2>Create a post</h2></div><span class="step-pill">OpenAI Images</span></div>
+                <label>Image direction<textarea id="instagram-prompt" rows="4" placeholder="A grainy night-drive scene in deep green and amber, editorial album artwork…"></textarea></label>
+                <label>Caption<textarea id="instagram-caption" rows="4" placeholder="Write a caption that gives people a reason to share this."></textarea></label>
+                <div class="form-row"><label>Publish date<input id="instagram-date" type="date" /></label><label>Publish time<input id="instagram-time" type="time" /></label></div>
+                <div class="form-actions"><button class="primary-button" type="submit">Generate &amp; queue <span>→</span></button><span class="form-feedback" id="instagram-feedback"></span></div>
+              </form>
+              <div class="panel queue-panel">
+                <div class="panel-heading"><div><p class="eyebrow">02 · QUEUE</p><h2>Scheduled posts</h2></div><span class="task-count" id="instagram-queue-count">—</span></div>
+                <div class="instagram-queue" id="instagram-queue"><p class="empty-state">Loading your queue…</p></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="view" data-view-panel="links">
+            <div class="page-header"><div><p class="eyebrow accent">LINKS &amp; CTAS</p><h1>Make every click useful<span class="accent">.</span></h1><p>Give fans a clear next step and learn which stories bring them in.</p></div><button class="primary-button" type="button" id="copy-release-link">Copy release link <span>↗</span></button></div>
+            <div class="links-grid"><div class="panel link-builder"><div class="panel-heading"><div><p class="eyebrow">SMART LINK BUILDER</p><h2>Campaign link</h2></div><span class="step-pill">No account needed</span></div><label>Destination URL<input id="link-destination" type="url" value="https://open.spotify.com/track/afterglow-nova-vale" /></label><div class="form-row"><label>Source<select id="link-source"><option>Instagram</option><option>TikTok</option><option>Email</option><option>Direct</option></select></label><label>Campaign<input id="link-campaign" type="text" value="afterglow-release" /></label></div><div class="generated-link"><span>signal.fm/afterglow?src=instagram</span><button type="button" id="copy-generated-link">Copy</button></div><p class="field-help">Use a different source link in each bio or post so your analytics tell a story.</p></div><div class="panel cta-panel"><p class="eyebrow">CTA LIBRARY</p><h2>Ask like a human.</h2><div class="cta-list"><button type="button" class="cta-item"><span>For the people who need a night drive song →</span><b>Copy</b></button><button type="button" class="cta-item"><span>If this finds you at the right time, save it →</span><b>Copy</b></button><button type="button" class="cta-item"><span>Full song is out. Tell me your favorite line →</span><b>Copy</b></button></div></div></div>
+            <div class="panel link-performance"><div class="panel-heading"><div><p class="eyebrow">LINK PERFORMANCE</p><h2>Clicks that became listeners</h2></div><span class="date-range">This campaign</span></div><div class="link-table"><div class="table-row table-header"><span>Source</span><span>Clicks</span><span>Listeners</span><span>Conversion</span></div><div class="table-row"><span><i class="source-dot social"></i> Instagram</span><strong>1,204</strong><strong>842</strong><span class="conversion">69.9%</span></div><div class="table-row"><span><i class="source-dot algorithmic"></i> TikTok</span><strong>786</strong><strong>391</strong><span class="conversion">49.7%</span></div><div class="table-row"><span><i class="source-dot editorial"></i> Email</span><strong>348</strong><strong>282</strong><span class="conversion">81.0%</span></div></div></div>
+          </section>
+
+          <section class="view" data-view-panel="analytics">
+            <div class="page-header"><div><p class="eyebrow accent">ANALYTICS</p><h1>Follow the signal<span class="accent">.</span></h1><p>Manual snapshots are enough to make better creative decisions.</p></div><button class="outline-button" type="button" id="add-metric">＋ Add snapshot</button></div>
+            <div class="analytics-overview"><div class="panel analytics-main"><div class="panel-heading"><div><p class="eyebrow">PERFORMANCE SNAPSHOT</p><h2>Afterglow</h2></div><span class="step-pill">Updated today</span></div><div class="analytics-numbers"><div><span>Streams</span><strong>24,680</strong><em>+18.4%</em></div><div><span>Save rate</span><strong>7.46%</strong><em>+0.8%</em></div><div><span>Playlist adds</span><strong>486</strong><em>+14.2%</em></div></div><div class="big-chart"><div class="big-chart-labels"><span>3k</span><span>2k</span><span>1k</span><span>0</span></div><div class="big-chart-area"><div class="grid-line one"></div><div class="grid-line two"></div><div class="grid-line three"></div><div class="grid-line four"></div><svg viewBox="0 0 800 250" preserveAspectRatio="none"><path class="chart-fill" d="M0,210 C50,200 75,210 110,177 S180,190 214,155 S270,172 315,125 S380,158 418,118 S470,125 505,98 S565,120 600,65 S670,91 710,42 S760,63 800,25 L800,250 L0,250 Z"></path><path class="chart-line" d="M0,210 C50,200 75,210 110,177 S180,190 214,155 S270,172 315,125 S380,158 418,118 S470,125 505,98 S565,120 600,65 S670,91 710,42 S760,63 800,25"></path></svg><div class="chart-x"><span>Aug 24</span><span>Aug 31</span><span>Sep 7</span><span>Sep 14</span><span>Today</span></div></div></div></div><div class="panel takeaway-panel"><div class="insight-orb">✦</div><p class="eyebrow accent">WHAT TO DO NEXT</p><h2>Repeat the source that works.</h2><p>Email is converting 1.6× better than social. Give your next personal note the same care as your hero content.</p><button class="text-button" type="button" data-navigate="content">Open content studio <span>→</span></button></div></div>
+            <div class="panel metrics-entry"><div class="panel-heading"><div><p class="eyebrow">YOUR SNAPSHOTS</p><h2>Keep the habit</h2></div><span class="date-range">Last updated today</span></div><div class="snapshot-row"><span>19 Sep 2026</span><strong>24,680 streams</strong><span>1,842 saves</span><span>+18.4% momentum</span><button class="more-button" type="button">•••</button></div><div class="snapshot-row"><span>12 Sep 2026</span><strong>20,844 streams</strong><span>1,620 saves</span><span>+11.2% momentum</span><button class="more-button" type="button">•••</button></div></div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
